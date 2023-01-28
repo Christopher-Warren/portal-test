@@ -5,6 +5,8 @@ import PortalPlugin from "puppeteer-extra-plugin-portal";
 import os from "os";
 import { request } from "http";
 
+console.log(os.homedir());
+
 puppeteer.use(
   PortalPlugin({
     // This is a typical configuration when hosting behind a secured reverse proxy
