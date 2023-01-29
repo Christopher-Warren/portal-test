@@ -5,7 +5,11 @@ import PortalPlugin from "puppeteer-extra-plugin-portal";
 import os from "os";
 import { request } from "http";
 
-console.log(os.homedir());
+const app = express();
+
+app.listen(3001, () => {
+  console.log("listening!");
+});
 
 puppeteer.use(
   PortalPlugin({
